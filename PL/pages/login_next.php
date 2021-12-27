@@ -17,15 +17,15 @@ if (isset($_POST['submitBtn'])) {
 
             if ($_SESSION['loggeduser']->getRole() == 3) {
                 echo "<script type='text/javascript'>"
-                    . " window.location.href='Agency.html';
+                    . " window.location.href='./prof/prof_page.php';
             </script>";
             } else if ($_SESSION['loggeduser']->getRole() == 2) {
                 echo "<script type='text/javascript'>"
-                    . " window.location.href='adminPage.php';
+                    . " window.location.href='./student/student_page.php';
             </script>";
             } else if ($_SESSION['loggeduser']->getRole() == 1) {
                 echo "<script type='text/javascript'>"
-                    . " window.location.href='student_dashboard.php';
+                    . " window.location.href='./admin/admin_page.php';
             </script>";
             }
         } else {

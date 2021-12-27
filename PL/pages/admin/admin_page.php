@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Eilco Portail</title>
-    <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="../vendors/base/vendor.bundle.base.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../../assets/vendors/base/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../../styles/admin_page.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                             <a class="dropdown-item">
                                 <i class="ti-settings text-primary"></i> Settings
                             </a>
-                            <a class="dropdown-item">
+                            <a class="dropdown-item" href="../../index.php">
                                 <i class="ti-power-off text-primary"></i> Logout
                             </a>
                         </div>
@@ -44,7 +44,7 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">
+                        <a class="nav-link" href="./admin_page.php">
                             <i class="ti-home menu-icon"></i>
                             <span class="menu-title">Home</span>
                         </a>
@@ -60,9 +60,9 @@
                         </a>
                         <div class="collapse" id="auth">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="./basic_elements.html">Add User </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="./AddProf.html">Add Prof </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="./basic-table.html">View Users </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./AddStudent.php">Add Student </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./AddProf.php">Add Prof </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./View_Students.php">View Users </a></li>
 
                             </ul>
                         </div>
@@ -77,8 +77,8 @@
                         </a>
                         <div class="collapse" id="auth1">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" href="./AddCourses.html">Add Cours </a></li>
-                                <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> View Courses </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./AddCourse.php">Add Cours </a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./ViewCourses.php"> View Courses </a></li>
                             </ul>
                         </div>
                     </li>
@@ -210,21 +210,18 @@
         <!-- page-body-wrapper ends -->
 
     </div>
-    <!-- container-scroller -->
+
     <!-- plugins:js lal side nav -->
-    <script src="../vendors/base/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/base/vendor.bundle.base.js"></script>
 
     <!-- lal nav wl responsive -->
-    <script src="../js/off-canvas.js"></script>
+    <script src="../../scripts/admin/js/off-canvas.js"></script>
 
     <!-- lal checkpoint li bl todolist -->
-    <script src="../js/template.js"></script>
+    <script src="../../scripts/admin/js/template.js"></script>
 
     <!-- lal todo list-->
-    <script src="../js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page-->
-    <!-- End custom js for this page-->
+    <script src="../../scripts/admin/js/todolist.js"></script>
 </body>
 
 </html>
