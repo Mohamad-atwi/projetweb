@@ -2,6 +2,6 @@
 $servername = "localhost";
 $username = "root";
 $password = "toor";
-$dbname = "projet_web";
+$dbname = "eilco";
 
 ?>

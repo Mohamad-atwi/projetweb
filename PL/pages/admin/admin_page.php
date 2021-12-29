@@ -28,7 +28,7 @@
                             <a class="dropdown-item">
                                 <i class="ti-settings text-primary"></i> Settings
                             </a>
-                            <a class="dropdown-item" href="../../index.php">
+                            <a class="dropdown-item" href="../logout.php">
                                 <i class="ti-power-off text-primary"></i> Logout
                             </a>
                         </div>

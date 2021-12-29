@@ -40,7 +40,7 @@
               <a class="dropdown-item">
                 <i class="ti-settings text-primary"></i> Settings
               </a>
-              <a class="dropdown-item" href="../../index.php">
+              <a class="dropdown-item" href="../logout.php">
                 <i class="ti-power-off text-primary"></i> Logout
               </a>
             </div>
@@ -105,45 +105,64 @@
                 <div class="card-body">
                   <h4 class="card-title">Cours Information</h4>
 
-                  <form class="forms-sample">
+                  <form class="forms-sample" action="../addcours.php" method="POST">
                     <div class="form-group">
                       <label for="nom">Nom</label>
-                      <input type="text" class="form-control" id="nom" placeholder="Nom du cour">
+                      <input type="text" class="form-control" name="nom" placeholder="Nom du cour">
                     </div>
                     <div class="form-group">
                       <label for="abrev">Abreviation</label>
-                      <input type="text" class="form-control" id="abrev" placeholder="Abreviation">
+                      <input type="text" class="form-control" name="abrev" placeholder="Abreviation">
                     </div>
 
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Prof</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="nom du Prof">
+                      <select class="select" name="prof">
+                        <?php
+                        require_once("../../../BLL/usersManager.php");
+                        $profs = getProfs();
+                        echo "<option value=".'"'."0".'"'.">"."Prof"."</option>";
+                        if ($profs != null) {
+                          for ($i = 0; $i < count($profs); $i++) {
+                            echo "<option value=".'"'.$profs[$i]->getId().'"'.">".$profs[$i]->getPrenom()." ".$profs[$i]->getNom()."</option>";
+                          }
+                        }
+                        ?>
+                      </select>
                     </div>
                     <div class="form-group">
-                      <label for="birthday">nombre des heures</label>
-                      <input type="text" class="form-control" id="birthday" name="birthday">
+                      <label for="birthday">nombre de credits</label>
+                      <div>
+                      <select class="select" name="credits">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                      </div>
                     </div>
                     <div class="form-group">
-                      <label for="phone">Formation</label>
-                      <input type="text" class="form-control" id="phone" placeholder="Formation">
+                      <select class="select" name="formation">
+                        <option value="0">Formation</option>
+                        <option value="1">CP1</option>
+                        <option value="2">CP2</option>
+                        <option value="3">ING1</option>
+                        <option value="4">ING2</option>
+                        <option value="5">ING3</option>
+                      </select>
                     </div>
 
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button type="submit" class="btn btn-primary mr-2" name="submitBtn">Submit</button>
 
                   </form>
                 </div>
               </div>
             </div>
-
-
-
           </div>
         </div>
 
       </div>
-      <!-- main-panel ends -->
     </div>
-    <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->

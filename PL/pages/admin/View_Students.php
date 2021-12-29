@@ -37,7 +37,7 @@
               <a class="dropdown-item">
                 <i class="ti-settings text-primary"></i> Settings
               </a>
-              <a class="dropdown-item" href="../../index.php">
+              <a class="dropdown-item" href="../logout.php">
                 <i class="ti-power-off text-primary"></i> Logout
               </a>
             </div>
@@ -96,15 +96,14 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+
           <div class="row">
 
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Striped Table</h4>
-                  <p class="card-description">
-                    Add class <code>.table-striped</code>
-                  </p>
+                  <h4 class="card-title">All Users</h4>
+
                   <div class="table-responsive">
                     <table class="table table-striped">
                       <thead>
@@ -156,10 +155,10 @@
                             mostaphayoussef@eilco.com
                           </td>
                           <td>
-                            <button class="btn btn-danger">x</button>
+                            <button class="btn btn-danger">Delete</button>
                           </td>
                           <td>
-                            <button>U</button>
+                            <button type="button" class="btn btn-warning">Update</button>
                           </td>
                         </tr>
                         <tr>
@@ -182,10 +181,10 @@
                             mostaphayoussef@eilco.com
                           </td>
                           <td>
-                            <button class="btn btn-danger">x</button>
+                            <button class="btn btn-danger">Delete</button>
                           </td>
                           <td>
-                            <button>U</button>
+                            <button type="button" class="btn btn-warning">Update</button>
                           </td>
                         </tr>
                         <tr>
@@ -208,10 +207,10 @@
                             mostaphayoussef@eilco.com
                           </td>
                           <td>
-                            <button class="btn btn-danger">x</button>
+                            <button class="btn btn-danger">Delete</button>
                           </td>
                           <td>
-                            <button>U</button>
+                            <button type="button" class="btn btn-warning">Update</button>
                           </td>
                         </tr>
                         <tr>
@@ -234,10 +233,10 @@
                             mostaphayoussef@eilco.com
                           </td>
                           <td>
-                            <button class="btn btn-danger">x</button>
+                            <button class="btn btn-danger">Delete</button>
                           </td>
                           <td>
-                            <button>U</button>
+                            <button type="button" class="btn btn-warning">Update</button>
                           </td>
                         </tr>
 
@@ -252,9 +251,7 @@
         </div>
 
       </div>
-      <!-- main-panel ends -->
     </div>
-    <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->

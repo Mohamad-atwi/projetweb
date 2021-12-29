@@ -37,7 +37,7 @@
               <a class="dropdown-item">
                 <i class="ti-settings text-primary"></i> Settings
               </a>
-              <a class="dropdown-item" href="../../index.php">
+              <a class="dropdown-item" href="../logout.php">
                 <i class="ti-power-off text-primary"></i> Logout
               </a>
             </div>
@@ -94,6 +94,7 @@
         </ul>
       </nav>
       <!-- partial -->
+
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
@@ -102,96 +103,74 @@
                 <div class="card-body">
                   <h4 class="card-title">Information personnel</h4>
 
-                  <form class="forms-sample">
+                  <form class="forms-sample" method="post" action="../addprof.php">
                     <div class="form-group">
                       <label for="nom">Nom</label>
-                      <input type="text" class="form-control" id="nom" placeholder="Nom">
+                      <input type="text" class="form-control" name="nom" placeholder="Nom">
                     </div>
                     <div class="form-group">
                       <label for="prenom">Prenom</label>
-                      <input type="text" class="form-control" id="prenom" placeholder="Prenom">
+                      <input type="text" class="form-control" name="prenom" placeholder="Prenom">
                     </div>
 
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      <label for="exampleInputEmail1">Email Personel</label>
+                      <input type="email" class="form-control" name="email_personel" placeholder="Email">
                     </div>
                     <div class="form-group">
-                      <label for="birthday">Birthday</label>
-                      <input type="date" class="form-control" id="birthday" name="birthday">
+                      <label for="birthday">Date De Naissance</label>
+                      <input type="date" class="form-control" name="date_de_naissance" name="birthday">
                     </div>
                     <div class="form-group">
                       <label for="phone">Phone</label>
-                      <input type="text" class="form-control" id="phone" placeholder="Phone number">
+                      <input type="text" class="form-control" name="phone" placeholder="Phone number">
                     </div>
-
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
-
-                  </form>
                 </div>
               </div>
             </div>
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Information Academique</h4>
-
-                  <form class="forms-sample">
-
-                    <div class="form-group">
-                      <label for="username">Username</label>
-                      <input type="text" class="form-control" id="username" placeholder="Username">
-                    </div>
-
-                    <div class="form-group">
-                      <select class="select">
-                        <option>---</option>
-                        <option>CP1</option>
-                        <option>CP2</option>
-                        <option>ING1</option>
-                        <option>ING2</option>
-                        <option>ING3</option>
+                  <div class="form-group">
+                    <select class="select" name="nationalite">
+                      <option value="not set">Nationalite</option>
+                      <option value="Libanais">Libanais</option>
+                      <option value="Francais">Francais</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select class="select" name="sexe">
+                      <option value="not set">Sexe</option>
+                      <option value="Homme">Homme</option>
+                      <option value="Femme">Femme</option>
+                    </select>
+                  </div>
 
 
-                      </select>
+                  <div class="form-group ">
+                    <label for="pass">Adresse</label>
 
-                    </div>
+                    <input type="text" class="form-control" name="Adresse" placeholder="Addresse">
 
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email academique</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                    </div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="exampleInputConfirmPassword2">Complement d'Adresse</label>
 
-                    <div class="form-group ">
-                      <label for="pass">Password</label>
+                    <input type="text" class="form-control" name="ComplementAdresse" placeholder="(Facultatif)">
 
-                      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-
-                    </div>
-                    <div class="form-group ">
-                      <label for="exampleInputConfirmPassword2">Re Password</label>
-
-                      <input type="password" class="form-control" id="exampleInputConfirmPassword2" placeholder="Password">
-
-                    </div>
-
-                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                  </div>
+                  <button class="btn btn-primary mr-2" name="submitBtn">
+                    Submit
+                  </button>
 
                   </form>
-
-
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
-
       </div>
-      <!-- main-panel ends -->
     </div>
-    <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->

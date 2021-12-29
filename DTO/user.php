@@ -10,10 +10,11 @@ class user{
     private $email_personel;
     private $email_universitaire;
     private $sexe;
+    private $formation_id;
+    private $phone;
+    private $adresse;
 
-    function __construct($username, $password) {
-        $this->username = $username;
-        $this->password = $password;
+    function __construct() {
     }
 
     public function getId() {
@@ -75,6 +76,24 @@ class user{
     }
     public function setSexe($sexe) {
         $this->sexe = $sexe;
+    }
+    public function getPhone() {
+        return $this->phone;
+    }
+    public function setPhone($phone) {
+        $this->phone = $phone;
+    }
+    public function getAdresse() {
+        return $this->adresse;
+    }
+    public function setAdresse($adresse) {
+        $this->adresse = $adresse;
+    }
+    public function getFormationId() {
+        return $this->formation_id;
+    }
+    public function setFormationId($formation_id) {
+        $this->formation_id = $formation_id;
     }
 }
 ?>

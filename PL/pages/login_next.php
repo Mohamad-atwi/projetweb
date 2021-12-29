@@ -8,8 +8,9 @@ if (isset($_POST['submitBtn'])) {
 
     try {
 
-        $user = new user($username, $pass);
-
+        $user = new user();
+        $user->setUsername($username);
+        $user->setPassword($pass);
         $result = loginUser($user);
         if ($result) {
             session_start();
